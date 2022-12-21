@@ -1,0 +1,19 @@
+// Do not move this into https://git.tsdev.tech/TS/modules/-/tree/master/grpc - necessary for container builds.
+syntax = "proto3";
+
+package traffic_distribution;
+
+message CampaignTraffic {
+  int64 campaign_id = 1;
+  string rotator_id = 2;
+  uint64 count = 3;
+  int64  last_action_at = 4; // timestamp
+}
+
+message CampaignTrafficAggregated {
+  int64  campaign_id = 1;
+  string rotator_id = 2;
+  int64  last_action_at = 3; // timestamp
+  float  part = 4; // part of campaign traffic for the rotator unit, in interval [0.0, 1.0]
+}
+
