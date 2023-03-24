@@ -1,3 +1,8 @@
+# ClickHouse Cluster
+127.0.0.1:8124
+127.0.0.1:8125
+127.0.0.1:8126
+
 # ClickHouse Cluster Docker Compose
 
 ![4cc49380-82ee-11ea-9baf-d971dbaafe63](https://github.com/Al-assad/md-img/blob/master/bucket-3/202011271720.png)

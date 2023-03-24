@@ -29,7 +29,7 @@ services:
       - ch02:172.18.1.6
       - ch03:172.18.1.7
     hostname: ch01
-    image: clickhouse/clickhouse-server:22.3.13.80
+    image: clickhouse/clickhouse-server:22.8.15.23
     networks:
       clickhouse-cluster:
         ipv4_address: 172.18.1.5
@@ -55,7 +55,7 @@ services:
       - ch01:172.18.1.5
       - ch03:172.18.1.7
     hostname: ch02
-    image: clickhouse/clickhouse-server:22.3.13.80
+    image: clickhouse/clickhouse-server:22.8.15.23
     networks:
       clickhouse-cluster:
         ipv4_address: 172.18.1.6
@@ -81,7 +81,7 @@ services:
       - ch01:172.18.1.5
       - ch02:172.18.1.6
     hostname: ch03
-    image: clickhouse/clickhouse-server:22.3.13.80
+    image: clickhouse/clickhouse-server:22.8.15.23
     networks:
       clickhouse-cluster:
         ipv4_address: 172.18.1.7
